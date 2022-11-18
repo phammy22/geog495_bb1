@@ -1,3 +1,6 @@
 Checkpoint #1: Project proposal Due by the end of week 8 (Nov. 27th, 23:59) (15 PTS)
 Please share your final project proposal on this discussion board. A proposal only needs to be shared once by one of your group members. In the proposal, please indicate what you want to make by the end of this quarter, the targeting audience, the available datasets, the required multimedia (e.g., texts, images, videos, etc) if applicable, and the functions. It would be great if you can find one or two digital geographies-related projects that you can learn from. It will give the instructor and TAs a better idea of how to help you. The proposal needs to have at least 300 words and one or two screenshots of the available projects that you want to learn from. Once a project proposal is shared, I welcome any suggestions if you have, the TAs and the instructor will participate in the discussion too.
 
+Geography-related project examples: https://www.google.com/maps/d/u/0/viewer?ie=UTF8&hl=en&msa=0&ll=41.99011900000002%2C-87.95104999999998&spn=1.12278%2C0.920105&z=9&source=embed&mid=1c3TpQV6fxRVkRxFOabOmiLjiTLM
+
+https://archokc.org/schoolfinder
