@@ -9,3 +9,35 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+.surround {
+    position: absolute;
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 3px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#title {
+    top: 0;
+    /*left: 0;*/
+}
+
+#legend {
+    bottom: 25px;
+}
+
+#toggles {
+    top: 40%;
+    right: 0;
+}
+
+#credit {
+    bottom: 25px;
+    right: 0;
+}

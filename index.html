@@ -20,6 +20,34 @@
     <main>
         <!-- load map -->
         <div id="map"></div>
+
+        <div class="surround" id="title">
+            <h1>Title</h1>
+            <h3>Subtitle</h3>
+        </div>
+        <div class="surround" id="legend">
+            <h2>Legend</h2>
+        </div>
+        <div class="surround" id="toggles">
+            <h2>Toggles</h2>
+            <input type="radio" id="toggle-public" name="pubpriv" value="public">
+            <label for="toggle-public">Public</label><br>
+            <input type="radio" id="toggle-private" name="pubpriv" value="private">
+            <label for="toggle-private">Private</label><br>
+            <input type="radio" id="toggle-either" name="pubpriv" value="either" checked>
+            <label for="toggle-either">Either</label><br>
+            <br>
+            <input type="checkbox" id="toggle-elementary" name="ele" value="elementary" checked>
+            <label for="toggle-elementary">Elementary</label><br>
+            <input type="checkbox" id="toggle-middle" name="mid" value="middle" checked>
+            <label for="toggle-middle">Middle</label><br>
+            <input type="checkbox" id="toggle-high" name="hig" value="high" checked>
+            <label for="toggle-high">High</label><br>
+        </div>
+        <div class="surround" id="credit">
+            <h2>Credits:</h2>
+        </div>
+
         <!-- JS file -->
         <script src="script.js"></script>
     </main>
