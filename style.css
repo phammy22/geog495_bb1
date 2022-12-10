@@ -41,3 +41,13 @@ h2 {
     bottom: 25px;
     right: 0;
 }
+
+.mapboxgl-ctrl-geocoder {
+    min-width: 500px;
+    top: 50px;
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
