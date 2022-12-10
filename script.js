@@ -29,18 +29,9 @@ map.on('load', () => {
             ]
         }
     });
-
-    map.setPaintProperty('schools',
-        'circle-opacity', [
-            'match',
-            ['get', 'PUB_PRIV'],
-            'Public',
-            1,
-            0
-        ]);
 });
 
-toggles = {
+const toggles = {
     'either': document.getElementById('toggle-either'),
     'public': document.getElementById('toggle-public'),
     'private': document.getElementById('toggle-private'),
@@ -54,43 +45,27 @@ Object.entries(toggles).forEach(([k, v]) => {
 });
 
 function updateVis() {
-    console.log('test');
+    let either_toggled = toggles.either.checked;
+    let public_toggled = toggles.public.checked;
+    let private_toggled = toggles.private.checked;
+    let elementary_toggled = toggles.elementary.checked;
+    let middle_toggled = toggles.middle.checked;
+    let high_toggled = toggles.high.checked;
+
+    let expression = [
+        'case',
+        ['all',
+            ['any', 
+                ['all', ['==', ['get', 'TYPE_ELE'], 1], elementary_toggled],
+                ['all', ['==', ['get', 'TYPE_MID'], 1], middle_toggled],
+                ['all', ['==', ['get', 'TYPE_HIG'], 1], high_toggled]],
+            ['any',
+                either_toggled,
+                ['all', ['==', ['get', 'PUB_PRIV'], 'Public'], public_toggled],
+                ['all', ['==', ['get', 'PUB_PRIV'], 'Private'], private_toggled]]],
+        1,
+        0
+    ];
+
+    map.setPaintProperty('schools', 'circle-opacity', expression);
 }
-
-document.getElementById('toggle-either').addEventListener('click', () => {
-    map.setPaintProperty('schools', 'circle-opacity', 1);
-});
-
-document.getElementById('toggle-public').addEventListener('click', () => {
-    map.setPaintProperty('schools',
-    'circle-opacity', [
-        'match',
-        ['get', 'PUB_PRIV'],
-        'Public',
-        1,
-        0
-    ]);
-});
-
-document.getElementById('toggle-private').addEventListener('click', () => {
-    map.setPaintProperty('schools',
-    'circle-opacity', [
-        'match',
-        ['get', 'PUB_PRIV'],
-        'Private',
-        1,
-        0
-    ]);
-});
-
-document.getElementById('toggle-elementary').addEventListener('click', () => {
-    map.setPaintProperty('schools',
-    'circle-opacity', [
-        'match',
-        ['get', 'TYPE_ELE'],
-        1,
-        1,
-        0
-    ]);
-});
-
