@@ -35,8 +35,9 @@ const geocoder = new MapboxGeocoder({
     // Initialize the geocoder
     accessToken: mapboxgl.accessToken, // Set the access token
     mapboxgl: mapboxgl, // Set the mapbox-gl instance
+    marker: false, // Do not use the default marker style
     placeholder: 'Search for schools in Seattle', // Placeholder text for the search bar
-    bbox: [-122.451358,47.785686,-122.194608,47.474749], // Boundary for Seattle
+    bbox: [-122.438889,47.482245,-122.253494,47.741931], // Boundary for Seattle
     proximity: {
         longitude: -122.3321,
         latitude: 47.6062
