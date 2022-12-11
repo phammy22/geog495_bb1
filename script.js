@@ -47,12 +47,8 @@ const geocoder = new MapboxGeocoder({
 map.addControl(geocoder);
 
     const popup = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: false
     });
-map.on('mouseenter', 'schools', (e) => {
-    // Change the cursor style as a UI indicator.
-    map.getCanvas().style.cursor = 'pointer';
+map.on('click', 'schools', (e) => {
     
     // Copy coordinates array.
     const coordinates = e.features[0].geometry.coordinates.slice();
@@ -60,6 +56,8 @@ map.on('mouseenter', 'schools', (e) => {
     const school_address = e.features[0].properties.ADDRESS;
     const city = e.features[0].properties.CITY;
     const PUB_PRIV = e.features[0].properties.PUB_PRIV;
+    const website = e.features[0].properties.WEBSITE;
+    const grades = e.features[0].properties.GRADE;
     
     
     // Ensure that if the map is zoomed out such that multiple
@@ -71,13 +69,18 @@ map.on('mouseenter', 'schools', (e) => {
     
     // Populate the popup and set its coordinates
     // based on the feature found.
-    popup.setLngLat(coordinates).setHTML("School name:  " + school_name + "<br>Address: " + school_address + ", " + city +  "<br>Status: " + PUB_PRIV ).addTo(map);
+    popup.setLngLat(coordinates).setHTML("School name:  " + school_name + "<br>Address: " + school_address + ", " + city +  "<br>Status: " + PUB_PRIV +  "<br>Grade: " + grades + '<h3><a href="' + website + '">' + website + '</a></h3>').addTo(map);
     });
-    
-    map.on('mouseleave', 'schools', () => {
-    map.getCanvas().style.cursor = '';
-    popup.remove();
-    });
+
+    map.on('mouseenter', 'schools', () => {
+        map.getCanvas().style.cursor = 'pointer';
+        });
+         
+        // Change it back to a pointer when it leaves.
+        map.on('mouseleave', 'schools', () => {
+        map.getCanvas().style.cursor = '';
+        });
+
 const toggles = {
     'either': document.getElementById('toggle-either'),
     'public': document.getElementById('toggle-public'),
