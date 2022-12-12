@@ -89,6 +89,7 @@ const toggles = {
     'middle': document.getElementById('toggle-middle'),
     'high': document.getElementById('toggle-high')
 };
+const legend = document.getElementById('legend');
 
 Object.entries(toggles).forEach(([k, v]) => {
     v.addEventListener('click', updateVis);
