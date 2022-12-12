@@ -1,17 +1,3 @@
-You need to create a readme.md file and save it in the root of the final project repository. This description must be no less than 800 words. In the repository, please describe the web map. Your description needs to include, but not limited to, the following items: (40pts)
-
-Project title (3pts)
-Project description (9pts)
-Project goal (such as, what is the message you want to deliver through your project?) (9pts)
-The application URL (not the repository url) (2pts)
-Screenshots (2pts)
-Main functions (5pts)
-Data sources (3pts)
-Applied libraries (e.g., mapbox gl js) and Web Services (e.g., github, basemap) in use (2pts)
-Acknowledgment (2PNTS)
-Other things that are necessary to inform the audience.
-Your readme.md file should be well-formatted and free of grammatical errors (3pts)
-
 # Seattle School Finder
 
 ## Description
@@ -24,16 +10,20 @@ The goal of the project is to provide a resource for parents looking to enroll t
 
 ## Screenshots
 
+!(/assets/screenshot1.png)
+
 
 ## Main Functions
-One of the main functions of this application is the search bar. Since the Geocoding API can return a variety of places that may be relevant to picking a school, users can utilize the search bar according to their needs. For example, a family that just bought a house in Seattle can search for the address of their house to find what schools are nearby. A parent planning on driving their child to or from school may be interested to know what schools are close by to their workplaces. If the user already has a school in mind and wants to know what other amenities are in the area, they can search for the school to see nearby businesses and restaurants that students can patronize or find an after school job at, study or hangout spots such as libraries or coffee shops, light rail stations, or any other places that may be significant to them.
+One of the main functions of this application is the search bar. Since the Geocoding API can return a variety of places that may be relevant to picking a school, users can utilize the search bar according to their needs. For example, a family that just bought a house in Seattle can search for the address of their house to find what schools are nearby. Similarly, a parent planning on driving their child to or from school may be interested to know what schools are in close proximity to their workplaces. If the user already has a school in mind and wants to know what other amenities are in the area, they can search for the school to see nearby businesses and restaurants that students can patronize or find an after school job at, study or hangout spots such as libraries or coffee shops, gyms, light rail stations, or any other places that may be of interest to them. Seeing the school in consideration marked on the basemap can also help users visualize a commute between their home and/or office and the school.
 
-Another function is the toggle panel on the right hand side of the page. We identified public versus private schools and the grade level(s) of the users’ children to be the two most immediately important criteria for parents to consider, so we designed the toggle bar to narrow down the schools being shown to only those that fit these two most critical criteria. Most users would probably already know if they want to choose a public or private school, but for those still deciding, there is the option to view both. Many schools, particularly private schools, may serve varying grade levels, and some parents have multiple children of various ages that they need to find schools for. To accommodate this, we made it possible to choose more than one option out of elementary, middle, and high schools.
+Another key function is the toggle panel on the right hand side of the page. We identified public versus private schools and the grade level(s) of the users’ children to be the two most immediately important criteria for parents to consider when choosing a school for their children, so we designed the toggle bar to narrow down the schools being shown to only those that fit these two most critical criteria. Most users would probably already know if they want to choose a public or private school, and can change the toggle settings accordingly. For those still deciding, there is the option to view both on the map at once. Though filtering by school level would be a useful function for many users, we anticipate that some users may not wish to restrict their search to a single school level. Many schools, particularly private schools, may serve varying grade levels, and some parents have multiple children of various ages that they need to find schools for. To accommodate these issues, we made it possible to choose more than one option out of elementary, middle, and high schools. 
 
 ##Data source
-The raw data was taken from publicly available feature layer data released by the Seattle City GIS Program, which provided the coordinates, names, and other information about the schools on our map. It is up to date as of May 23 2022. The data for public schools can be found [here]( https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::public-schools/explore?location=47.595213%2C-122.272143%2C10.86) and the private school data can be found [here](https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::private-schools-1/explore?location=47.610266%2C-122.312178%2C11.00).
+The raw data was taken from publicly available feature layer data released by the Seattle City GIS Program, which provided the coordinates, names, grade levels, websites, and other information about the schools on our map. It is up to date as of May 23 2022. The data for public schools can be found [here]( https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::public-schools/explore?location=47.595213%2C-122.272143%2C10.86) and the private school data can be found [here](https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::private-schools-1/explore?location=47.610266%2C-122.312178%2C11.00).
 
 ## Applied Libraries
+
+We used the javascript library Mapbox GL JS and used GitHub for version control.
 
 ## Acknowledgements
 We would like to thank Professor Zhao, our TA Steven Bao, and our classmates in Geog 495 for helping us develop the skills we used for this project!
