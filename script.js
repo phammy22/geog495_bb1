@@ -69,7 +69,7 @@ map.on('click', 'schools', (e) => {
     
     // Populate the popup and set its coordinates
     // based on the feature found.
-    popup.setLngLat(coordinates).setHTML("School name:  " + school_name + "<br>Address: " + school_address + ", " + city +  "<br>Status: " + PUB_PRIV +  "<br>Grade: " + grades + '<h3><a href="' + website + '">' + website + '</a></h3>').addTo(map);
+    popup.setLngLat(coordinates).setHTML("School name:  " + school_name + "<br>Address: " + school_address + ", " + city +  "<br>Type: " + PUB_PRIV +  "<br>Grade: " + grades + '<h3><a href="' + website + '">' + website + '</a></h3>').addTo(map);
     });
 
     map.on('mouseenter', 'schools', () => {
