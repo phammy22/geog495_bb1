@@ -10,8 +10,8 @@ The goal of the project is to provide a resource for parents looking to enroll t
 
 ## Screenshots
 
-![1](/assets/screenshot1.png)
-![2](/assets/screenshot2.png)
+![1](assets/screenshot1.png)
+![2](assets/screenshot2.png)
 
 
 ## Main Functions
