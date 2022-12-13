@@ -7,6 +7,7 @@ Our project, entitled Seattle School Finder, is an interactive web map depicting
 The goal of the project is to provide a resource for parents looking into the various options of schools in Seattle to enroll their children in. As parents will likely take a number of different factors into account when choosing a school, we designed our map with the intention of accommodating a wide variety of potential considerations. Those planning on moving to Seattle can search for their neighborhood or workplace to see what schools are nearby. Alternatively, users can search for a school to see its location on the map with respect to other points of interest. Once a school is located, the user can click on the dot to see more relevant information, including a link to the school’s website for the user to get more information about the school to decide if it’s the right choice for their children. Because there are hundreds of schools in the city, the differently colored public and private schools as well as the toggle features on the right hand side are designed to help parents restrict the schools that appear on the map to ones that fit their needs.
 
 ## URL
+[Seattle Schools Map](https://phammy22.github.io/geog495_bb1/)
 
 ## Screenshots
 ![image of map when it first loads in](assets/screenshot1.PNG)
