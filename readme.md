@@ -9,9 +9,10 @@ The goal of the project is to provide a resource for parents looking into the va
 ## URL
 
 ## Screenshots
+![image of map when it first loads in](assets/screenshot1.png)
+![image of what happens with map when a place is searched](assets/screenshot2.png)
+![image of what happens with map when point on map is selected](assets/screenshot3.png)
 
-![1](assets/screenshot1.PNG)
-![2](assets/screenshot2.PNG)
 ## Main Functions
 One of the main functions of this application is the search bar. Since the Geocoding API can return a variety of places that may be relevant to picking a school, users can utilize the search bar according to their needs. The search results will only return localized data, which will prevent the user from seeing irrelevant results. For example, a family that just bought a house in Seattle can search for the address of their house to find what schools are nearby. Similarly, a parent planning on driving their child to or from school may be interested to know what schools are in close proximity to their workplaces. If the user already has a school in mind and wants to know what other amenities are in the area, they can search for the school to see nearby businesses and restaurants that students can patronize or find an after school job at, study or hangout spots such as libraries or coffee shops, gyms, light rail stations, or any other places that may be of interest to them. Seeing the school in consideration marked on the basemap can also help users visualize a commute between their home and/or office and the school. 
 
