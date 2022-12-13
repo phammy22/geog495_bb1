@@ -9,8 +9,8 @@ The goal of the project is to provide a resource for parents looking into the va
 ## URL
 
 ## Screenshots
-![image of map when it first loads in](assets/screenshot1.png)
-![image of what happens with map when a place is searched](assets/screenshot2.png)
+![image of map when it first loads in](assets/screenshot1.PNG)
+![image of what happens with map when a place is searched](assets/screenshot2.PNG)
 ![image of what happens with map when point on map is selected](assets/screenshot3.png)
 
 ## Main Functions
