@@ -24,52 +24,56 @@
         <!-- surrounds -->
         <div class="surround" id="title">
             <h1>Seattle School Finder</h1>
-            <h3>Input any place in Seattle to see nearby schools, <br>
-            or input a school to find its location!</h3>
+            <p>Input any place in Seattle to see nearby schools, <br>
+            or input a school to find its location!</p>
         </div>
+        
         <div class="surround" id="legend">
             <h2>Legend</h2>
-            
             <ul>
                 <li class="blue">Public schools</li>
                 <br>
                 <li class="orange">Private schools</li>
-              </ul>
-              
-                
+            </ul>  
         </div>
+
         <div class="surround" id="toggles">
-            <h2>Show...</h2>
-            <input type="radio" id="toggle-public" name="pubpriv" value="public">
-            <label for="toggle-public">Public</label><br>
-            <input type="radio" id="toggle-private" name="pubpriv" value="private">
-            <label for="toggle-private">Private</label><br>
-            <input type="radio" id="toggle-either" name="pubpriv" value="either" checked>
-            <label for="toggle-either">Either</label><br>
-            <br>
-            <input type="checkbox" id="toggle-elementary" name="schooltype" value="elementary" checked>
-            <label for="toggle-elementary">Elementary</label><br>
-            <input type="checkbox" id="toggle-middle" name="schooltype" value="middle" checked>
-            <label for="toggle-middle">Middle</label><br>
-            <input type="checkbox" id="toggle-high" name="schooltype" value="high" checked>
-            <label for="toggle-high">High</label><br>
+            <h2>Schools Filter</h2>
+            <div class="select-type">
+                <div class="public-btn">
+                    <input type="radio" id="toggle-public" name="pubpriv" value="public">
+                    <label for="toggle-public">Public</label>
+                </div>
+                <div class="private-btn">
+                    <input type="radio" id="toggle-private" name="pubpriv" value="private">
+                    <label for="toggle-private">Private</label>
+                </div>
+                <div class="either-btn">
+                    <input type="radio" id="toggle-either" name="pubpriv" value="either" checked>
+                    <label for="toggle-either">Both</label>
+                </div>
+            </div>
+            <div class="select-level">
+                <div class="elem-btn">
+                    <input type="checkbox" id="toggle-elementary" name="schooltype" value="elementary" checked>
+                    <label for="toggle-elementary">Elementary</label>
+                </div>
+                <div class="middle-btn">
+                    <input type="checkbox" id="toggle-middle" name="schooltype" value="middle" checked>
+                    <label for="toggle-middle">Middle</label>
+                </div>
+                <div class="high-btn">
+                    <input type="checkbox" id="toggle-high" name="schooltype" value="high" checked>
+                    <label for="toggle-high">High</label>
+                </div>
+            </div>
         </div>
-        <div class="surround" id="credit">
-            
-            <p>
-               Data Source: 
-               <br>
 
-               
-                <a href="https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::public-schools/explore?location=47.595213%2C-122.272143%2C10.86
-                ">Seattle City GIS: public schools</a>.
-                <br>
-                <a href="https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::private-schools-1/explore?location=47.610266%2C-122.312178%2C11.00
-                ">Seattle City GIS: private schools</a>.
-              </p>
-
+        <div class="surround" id="sources">
+            Data Sources:
+            <a href="https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::public-schools/explore?location=47.595213%2C-122.272143%2C10.86">Seattle City GIS: public schools</a>
+            <a href="https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::private-schools-1/explore?location=47.610266%2C-122.312178%2C11.00">Seattle City GIS: private schools</a>
         </div>
-
         <!-- JS file -->
         <script src="script.js"></script>
     </main>

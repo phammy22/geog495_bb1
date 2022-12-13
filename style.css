@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Century Gothic", Helvetica, sans-serif;
+    font-size: 13px;
 }
 
 #map {
@@ -12,68 +14,64 @@ body {
 
 .surround {
     position: absolute;
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
     background-color: aliceblue;
     border-radius: 3px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    text-decoration: underline;
-    
+h1 {
+    margin: 0;
 }
-p {
-    font-size: 13px;
-}
-
-
 
 #title {
     top: 0;
-    /*left: 0;*/
 }
 
 #legend {
     bottom: 25px;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 20px;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    margin-left: 16px;
     padding: 10px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    line-height: 18px;
-    height: 150px;
-    margin-bottom: 40px;
-    width: 200px;
-    
-    
-    
 }
 
 .blue {
     color:#003f5c;
     font-weight: bold;
-    font-size: 24px;
-  }
+    font-size: 17px;
+}
 
 .orange {
     color:#ff6361;
     font-weight: bold;
-    font-size: 24px;
-  }
-  
+    font-size: 17px;
+}
 
+#toggles {
+    gap: 15px;
+}
 
-
+#sources {
+    bottom: 25px;
+    right: 0;
+    font-size: 13px;
+}
 
 #toggles {
     top: 40%;
     right: 0;
-    
-}
-
-#credit {
-    bottom: 25px;
-    right: 0;
-    height: 70px;
-    width: 175px;
 }
 
 .mapboxgl-ctrl-geocoder {
@@ -82,6 +80,7 @@ p {
 }
 
 .mapboxgl-popup {
+    min-width: fit-content;
     max-width: 700px;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
